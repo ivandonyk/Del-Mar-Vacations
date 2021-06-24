@@ -1,0 +1,184 @@
+$loginImgWrapperHeight: 100px;
+$loginImgWidthHeight: 70px;
+$delmarRed: #e95037;
+
+.login-page {
+  display: block;
+  background-repeat: repeat;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-size: 40% 50%;
+}
+
+.login-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+
+  .login-img-wrapper {
+    margin-top: 20vh;
+    width: 100%;
+    height: $loginImgWrapperHeight;
+
+    img {
+      width: $loginImgWidthHeight;
+      height: $loginImgWidthHeight;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .login-message {
+    background-color: #e9e9e9;
+    padding: 8px;
+    border: dashed 1px $delmarRed;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+
+    &.login-success {
+      border: dashed 1px #528311;
+    }
+
+    .big-error {
+      color: $delmarRed;
+      font-weight: bold;
+    }
+
+    .big-success {
+      color: #528311;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        color: $delmarRed;
+      }
+    }
+  }
+
+  .login-form {
+    background-color: #e9e9e9;
+    padding: 20px;
+    border: solid 1px #dfdfdf;
+    border-radius: 4px;
+
+    .form-input {
+      width: 100%;
+      margin-bottom: 16px;
+
+      label,
+      input {
+        width: 100%;
+      }
+
+      label {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      input {
+        border-radius: 1px;
+        border: none;
+        outline: none;
+        background-color: white;
+        height: 36px;
+        padding: 8px;
+        box-shadow: none;
+        margin-top: 6px;
+        font-size: 1.5rem;
+      }
+
+      input:focus {
+        border-color: #0f2338;
+        transition: border-color 0.3s ease-in;
+      }
+    }
+
+    .login-form-submit {
+      display: flex;
+
+      .remember-me {
+        margin-top: 8px;
+        flex: 8;
+
+        #remember-me {
+          cursor: pointer;
+          margin-right: 6px;
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          background-color: #cecece;
+          background-position-y: 0;
+          background-position-x: 0;
+          background-repeat: no-repeat;
+          background-size: 16px;
+        }
+
+        label {
+          margin-top: 1px;
+          position: absolute;
+          font-size: 1.3rem;
+        }
+      }
+
+      .back-to-login {
+        flex: 8;
+        font-size: 1.5rem;
+
+        span,
+        a {
+          display: block;
+          margin-top: 5px;
+          cursor: pointer;
+          text-decoration: underline;
+
+          &:hover {
+            color: $delmarRed;
+          }
+        }
+      }
+
+      button {
+        flex: 3;
+        padding: 6px;
+        background-color: $delmarRed;
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+
+        &.inactive {
+          pointer-events: none;
+          background-color: gray;
+        }
+      }
+    }
+
+    .forgot-password {
+      margin-top: 25px;
+
+      a {
+        font-size: 1.5rem;
+      }
+
+      a:hover {
+        color: $delmarRed;
+      }
+    }
+  }
+}
+
+.confirm-password-label {
+  position: relative;
+
+  .confirm-password-check {
+    font-size: 20px !important;
+    position: absolute;
+    top: -2px;
+    color: #528311;
+    left: 140px;
+  }
+}

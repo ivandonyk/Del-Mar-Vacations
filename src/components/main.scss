@@ -1,0 +1,218 @@
+$delmarRed: #e95037;
+
+.boder-radius-tabs {
+  display: flex;
+  align-items: center;
+  color: #0f2238;
+
+  p {
+    font-size: 1.8rem;
+    margin-right: 3.5rem;
+  }
+
+  li {
+    font-size: 1.8rem;
+
+    padding: 1rem 3rem;
+  }
+
+  li.react-tabs__tab--selected {
+    background: #e95037;
+    border-radius: 21px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+.grey-buttons li.react-tabs__tab--selected {
+  background: #dee5ec;
+  color: #0f2238;
+}
+
+.p-r-15 {
+  padding-right: 1.5rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.orange-arrow {
+  border-top: 5px solid #e95037 !important;
+}
+
+.toggle-arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #c4c4c3;
+  margin-left: 10px;
+}
+
+.delmar-red {
+  color: $delmarRed;
+}
+
+.italicized {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.generic-modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  animation: fadeIn 0.2s ease-in;
+}
+
+.generic-modal {
+  background-color: #efefef;
+  padding: 30px;
+  position: absolute;
+  top: 30vh;
+  z-index: 3;
+  width: 430px;
+  max-width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+  max-height: 60vh;
+
+  .generic-modal-message {
+    margin-bottom: 16px;
+  }
+
+  .yes {
+    padding: 8px;
+    font-size: 1.5rem;
+    color: red;
+    border: none;
+    margin-right: 10px;
+    text-decoration: underline;
+    background: transparent;
+  }
+
+  .no {
+    padding: 4px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #e95037;
+    border: none;
+    width: 120px;
+    height: 30px;
+  }
+}
+
+.text-error {
+  color: red;
+}
+
+.mt-6 {
+  margin-top: 6px;
+}
+
+.a-c {
+  align-items: center;
+}
+
+.field-highlight {
+  background-color: yellow;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+}
+
+.styled-checkbox {
+  opacity: 0;
+
+  & + label {
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  & + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 0;
+    box-shadow: none;
+    border: solid 1px #bfbfbf;
+  }
+
+  &:checked + label:before {
+    background: #fff;
+  }
+
+  &:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: #e95037;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 #e95037, 4px 0 0 #e95037, 4px -2px 0 #e95037,
+      4px -4px 0 #e95037, 4px -6px 0 #e95037, 4px -8px 0 #e95037;
+    transform: rotate(45deg);
+  }
+}
+
+#toast-container {
+  margin-top: 1rem;
+  font-size: 17px;
+}
+
+#toast-container.toast-top-full-width > .toast {
+  // max-width: 570px;
+  width: 90%;
+}
+
+#toast-container > .toast-success {
+  background-color: #00c851;
+  opacity: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #007e33;
+}
+
+#toast-container > .toast-success:hover {
+  opacity: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.toast-message {
+  font-size: 17px;
+}
+
+.MuiChip-root {
+  height: 25px !important;
+}

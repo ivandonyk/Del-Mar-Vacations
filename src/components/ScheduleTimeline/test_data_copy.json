@@ -1,0 +1,104 @@
+{
+  "rows": [
+    {
+      "name": "Elias",
+      "id": 1,
+      "role": "maintenance"
+    },
+    {
+      "name": "Design",
+      "id": 2,
+      "role": "maintenance"
+    },
+    {
+      "name": "Development",
+      "id": 3,
+      "role": "maintenance"
+    },
+    {
+      "name": "Test",
+      "id": 4,
+      "role": "maintenance"
+    },
+
+    {
+      "name": "Elias",
+      "id": 5,
+
+      "role": "landscaping"
+    },
+    {
+      "name": "Design",
+      "id": 6,
+      "role": "landscaping"
+    },
+    {
+      "name": "Development",
+      "id": 7,
+      "role": "landscaping"
+    },
+    {
+      "name": "Test",
+      "id": 8,
+      "role": "landscaping"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-row1-1",
+      "rowId": "row1",
+      "name": "Paperwork 1",
+      "startDate": "Tue, 11 Feb 2020 03:00 GMT+1",
+      "endDate": "Tue, 11 Feb 2020 06:27:41 GMT+1",
+      "status": "turnover"
+    },
+    {
+      "id": "item-row1-2",
+      "rowId": "row1",
+      "name": "Paperwork 2",
+      "startDate": "Tue, 11 Feb 2020 00:30 GMT+1",
+      "endDate": "Tue, 11 Feb 2020 06:27:41 GMT+1",
+      "status": "urgent"
+    },
+    {
+      "id": "item-row2-1",
+      "rowId": "row2",
+      "name": "Design 1",
+      "startDate": "Tue, 11 Feb 2020 00:30 GMT+1",
+      "endDate": "Tue, 11 Feb 2020 01:45:41 GMT+1",
+      "status": "medium"
+    },
+    {
+      "id": "item-row2-2",
+      "rowId": "row2",
+      "name": "Design 2",
+      "startDate": "Tue, 11 Feb 2020 01:00 GMT+1",
+      "endDate": "Tue, 11 Feb 2020 02:30:41 GMT+1",
+      "status": "urgent"
+    },
+    {
+      "id": "item-row3-1",
+      "rowId": "row3",
+      "name": "Development 1",
+      "startDate": "Tue, 11 Feb 2020 00:30 GMT+1",
+      "endDate": "Tue, 11 Feb 2020 02:27:41 GMT+1",
+      "status": "turnover"
+    },
+    {
+      "id": "item-row3-2",
+      "rowId": "row3",
+      "name": "Development 2",
+      "startDate": "Tue, 11 Feb 2020 01:30 GMT+1",
+      "endDate": "Tue, 11 Feb 2020 03:27:41 GMT+1",
+      "status": "urgent"
+    },
+    {
+      "id": "item-row4-1",
+      "rowId": "row7",
+      "name": "Development 4",
+      "startDate": "Tue, 11 Feb 2020 04:30 GMT+1",
+      "endDate": "Tue, 11 Feb 2020 06:27:41 GMT+1",
+      "status": "medium"
+    }
+  ]
+}

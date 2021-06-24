@@ -1,0 +1,28 @@
+.btn_wrapper {
+  position: relative;
+  border: 1px solid #4a739f;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 178px;
+  height: 36px;
+  cursor: pointer;
+
+  p {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    flex: 1;
+    text-align: center;
+    color: #4a739f;
+  }
+  img {
+    width: 1.8rem;
+    position: absolute;
+    left: 2rem;
+  }
+}
